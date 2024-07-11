@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animales</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1 class="titulo-principal">Animales</h1>
+    
+    <!-- Categoría Granja -->
+    <div class="category granja">
+        <h2>Granja</h2>
+        <div class="container">
+            <!-- Tarjeta de Pato -->
+            <div class="animal-card" data-sound="assets/sonidos/pato.wav">
+                <img src="/assets/imagenes/pato.png" alt="Pato">
+                <p>Pato</p>
+            </div>
+            <!-- Tarjeta de Pollito -->
+            <div class="animal-card" data-sound="assets/sonidos/pollito.m4a">
+                <img src="/assets/imagenes/pollito.png" alt="Pollito">
+                <p>Pollito</p>
+            </div>
+            <!-- Tarjeta de Gallina -->
+            <div class="animal-card" data-sound="assets/sonidos/gallina.m4a">
+                <img src="/assets/imagenes/gallina.png" alt="Gallina">
+                <p>Gallina</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Categoría Hogar -->
+    <div class="category hogar hidden">
+        <h2>Hogar</h2>
+        <div class="container">
+            <!-- Aquí puedes agregar animales domésticos -->
+        </div>
+    </div>
+
+    <!-- Categoría Selva -->
+    <div class="category selva hidden">
+        <h2>Selva</h2>
+        <div class="container">
+            <!-- Aquí puedes agregar animales de la selva -->
+        </div>
+    </div>
+
+    <!-- Visor de Imágenes -->
+    <div class="image-viewer" id="image-viewer">
+        <span class="close">&times;</span>
+        <span class="prev">&#10094;</span>
+        <img class="viewer-image" id="viewer-image" src="" alt="">
+        <span class="next">&#10095;</span>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
